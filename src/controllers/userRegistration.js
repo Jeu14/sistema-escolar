@@ -14,11 +14,12 @@ const registerUser = async (req, res) => {
 
     const { nome, email, senha } = value;
 
+    const errorMessages = {
+        emailExists: "E-mail já cadastrado",
+        internalServerError: "Erro interno do servidor",
+    };
+
     try {
-        const errorMessages = {
-            emailExists: "E-mail já cadastrado",
-            internalServerError: "Erro interno do servidor",
-        };
 
         const checkEmail = await knex("usuarios").where("email", email).first();
         if (checkEmail) {
