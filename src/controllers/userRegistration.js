@@ -32,7 +32,7 @@ const registerUser = async (req, res) => {
             .insert({
                 nome,
                 email,
-                senha: hashPass,
+                senha: hashPass
             })
             .returning(["nome", "email"]);
 

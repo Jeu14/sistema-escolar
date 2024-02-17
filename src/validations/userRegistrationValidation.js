@@ -14,7 +14,7 @@ const schemaUserRegistration = Joi.object({
         "string.empty": "O campo senha não pode estar vazio",
         "any.required": "O campo senha é obrigatório",
     }),
-});
+});         
 
 module.exports = {
     schemaUserRegistration,
