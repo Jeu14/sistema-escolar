@@ -16,7 +16,7 @@ const registerUser = async (req, res) => {
 
     const errorMessages = {
         emailExists: "E-mail já cadastrado",
-        internalServerError: "Erro interno do servidor",
+        internalServerError: "Não foi possível realizar o cadastro do usuario",
     };
 
     try {

@@ -12,7 +12,6 @@ const registerGrade = async (req, res) => {
     const { aluno_id, materia_id, unidade, nota_acumulada } = value;
 
     const errorMessages = {
-        studentExists: "Aluno já cadastrado",
         internalServerError: "Não foi possível registrar a nota do aluno",
     };
 

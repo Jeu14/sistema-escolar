@@ -11,7 +11,7 @@ const registerClass = async (req, res) => {
 
     const errorMessages = {
       classExists: "Matéria já cadastrado",
-      internalServerError: "Erro interno do servidor",
+      internalServerError: "Não foi possível realizar o cadastro da materia",
   };
 
     try {

@@ -13,7 +13,7 @@ const registerStudent = async (req, res) => {
 
     const errorMessages = {
         studentExists: "Aluno  já cadastrado",
-        internalServerError: "Erro interno do servidor",
+        internalServerError: "Não foi possível realizar o cadastro do aluno",
     };
 
     try {
