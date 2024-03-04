@@ -12,7 +12,7 @@ const router = express.Router();
 router.post("/user", registerUser);
 router.post("/login", userLogin);
 router.use(loginVerify);
-router.get("/student", registerStudent)
+router.post("/student", registerStudent)
 router.post("/class", registerClass)
 router.post("/grade", registerGrade)
 router.post("/attendance", registerAttendance)
