@@ -1,7 +1,7 @@
 # Sistema escolar
 
 
-##RESTful API que permite:
+## RESTful API que permite:
 
 - Cadastrar Usuário (professor)
 - Fazer login do usuário cadastrado
