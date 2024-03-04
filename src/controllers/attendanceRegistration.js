@@ -44,7 +44,7 @@ const registerAttendance = async (req, res) => {
         return res
             .status(500)
             .json({ erro: errorMessages.internalServerError });
-    }
+    } 
 };
 
 module.exports = registerAttendance;
